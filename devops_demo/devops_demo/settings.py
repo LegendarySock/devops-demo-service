@@ -82,8 +82,9 @@ DATABASES = {
         "NAME": os.getenv("DB_NAME", "postgres"),
         "USER": os.getenv("DB_USER", "postgres"),
         "PASSWORD": os.getenv("DB_PASSWORD", "postgres"),
-        "HOST": os.getenv("DB_HOST", "127.0.0.1"),
-        "PORT": os.getenv("DB_PORT", "5432"),
+        "HOST": os.getenv("DB_HOST", "postgres"),
+        "PORT": os.getenv("DB_PORT", "9098"),
+        "UTF": os.getenv ("DB_INITDB_ARGS", "--encoding=UTF8 --locale=en_US.UTF-8"),
     }
 }
 
